@@ -7,6 +7,7 @@ public class MessagePassing {
 		D d = new D();
 		process(d);
 		process(null);
+//		process(new B());  ERROR: type safety
 	}
 
 	private static void process(D d) {

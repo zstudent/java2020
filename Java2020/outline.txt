@@ -7,8 +7,8 @@
 []Working With Java Data Types
 * [x]Declare and initialize variables (including casting of primitive data types)
 * [x]Differentiate between object reference variables and primitive variables
-* []Know how to read or write to object fields
-* []Explain an Object's Lifecycle (creation, "dereference by reassignment" and garbage collection)
+* [x]Know how to read or write to object fields
+* [x]Explain an Object's Lifecycle (creation, "dereference by reassignment" and garbage collection)
 * []Develop code that uses wrapper classes such as Boolean, Double, and Integer
 []Using Operators and Decision Constructs
 * []Use Java operators; use parentheses to override operator precedence
