@@ -16,8 +16,11 @@ public class IntToBinaryString {
 	}
 
 	private static String binary(int i, int size) {
-		// TODO Auto-generated method stub
-		return null;
+		String r = binary(i);
+		while(r.length() < size) {
+			r = "0" + r;
+		}
+		return r;
 	}
 
 	private static String binary(int i) {
