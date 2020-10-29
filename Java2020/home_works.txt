@@ -1,0 +1,3 @@
+2020-10-29
+implement  	IntToBinaryString.binary(int i, int size) 
+convert int to bit string with padding 0s on the left
