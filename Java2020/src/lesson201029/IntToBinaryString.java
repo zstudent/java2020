@@ -6,9 +6,9 @@ public class IntToBinaryString {
 		
 		
 		int i = 7;  // 1111 1111   2**8 - 1  0xFF
-		
+
 		String s = binary(i);
-		
+
 		System.out.println(s);
 
 		System.out.println(binary(i,8));
@@ -16,8 +16,13 @@ public class IntToBinaryString {
 	}
 
 	private static String binary(int i, int size) {
-		// TODO Auto-generated method stub
-		return null;
+		String intToBinaryString = binary(i);
+		int strLength = intToBinaryString.length();
+		while (strLength < size) {
+			intToBinaryString = "0" + intToBinaryString;
+			strLength++;
+		}
+		return intToBinaryString;
 	}
 
 	private static String binary(int i) {
