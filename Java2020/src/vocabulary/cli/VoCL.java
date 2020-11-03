@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-import vocabulary.core.Service;
 import vocabulary.core.Vocabulary;
 import vocabulary.core.WordPair;
 
@@ -15,20 +14,19 @@ public class VoCL {
 		System.out.println("start");
 
 		Vocabulary voc = 
-				Service.builder()
+				Vocabulary.builder()
 				.setData(data)
 				.build();
 
-		Scanner scanner = new Scanner(System.in);
-
-		while (scanner.hasNextLine()) {
-			String word = scanner.nextLine();
-			System.out.println(voc.translate(word));
-			System.out.println(voc.describe(word));
-			System.out.println(voc.synonims(word));
-			System.out.println();
+		try (Scanner scanner = new Scanner(System.in) ) {
+			while (scanner.hasNextLine()) {
+				String word = scanner.nextLine();
+				System.out.println(voc.translate(word));
+				System.out.println(voc.describe(word));
+				System.out.println(voc.synonims(word));
+				System.out.println();
+			}
 		}
-
 
 	}
 
