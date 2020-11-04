@@ -1,11 +1,9 @@
 package vocabulary.cli;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 import vocabulary.core.Vocabulary;
-import vocabulary.core.WordPair;
+import vocabulary.smaples.Samples;
 
 public class VoCL {
 
@@ -15,7 +13,7 @@ public class VoCL {
 
 		Vocabulary voc = 
 				Vocabulary.builder()
-				.setData(data)
+				.setData(Samples.data)
 				.build();
 
 		try (Scanner scanner = new Scanner(System.in) ) {
@@ -28,13 +26,6 @@ public class VoCL {
 			}
 		}
 
-	}
-
-
-	static List<WordPair> data = Arrays.asList(
-			WordPair.of("friend", "მეგობარი"),
-			WordPair.of("friend", "friend: someone who is very fond to you"),
-			WordPair.of("friend", "buddy")
-			); 
+	} 
 
 }
