@@ -10,7 +10,7 @@
 * [x]Know how to read or write to object fields
 * [x]Explain an Object's Lifecycle (creation, "dereference by reassignment" and garbage collection)
 * [x]Develop code that uses wrapper classes such as Boolean, Double, and Integer
-[]Using Operators and Decision Constructs
+[x]Using Operators and Decision Constructs
 * [x]Use Java operators; use parentheses to override operator precedence
 * [x]Test equality between Strings and other objects using == and equals ()
 * [x]Create if and if/else and ternary constructs
