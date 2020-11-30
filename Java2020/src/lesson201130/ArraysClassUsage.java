@@ -34,7 +34,7 @@ public class ArraysClassUsage {
 		// if the index is negative or equal to zero, I put the key in the beginning of the array and shift other values to the right 
 		if(index <= 0) { 
 			newArray[0] = key; 
-			for(int i = 1; i < a.length; i++) {
+			for(int i = 1; i <= a.length; i++) {
 				newArray[i] = a[i-1]; 
 				} 	
 			} 
@@ -49,12 +49,11 @@ public class ArraysClassUsage {
 		else { 
 			newArray[index] = key; 
 			for(int i = 0; i < newArray.length; i++) { 
-				if(newArray[i] == 0 && i < index) newArray[i] = a[i]; 
+				if(i < index) newArray[i] = a[i]; 
 				else if(i > index) newArray[i] = a[i-1]; 
 				else continue; 
 			}	
 		}
 		return newArray;	
 	}
-
 }
