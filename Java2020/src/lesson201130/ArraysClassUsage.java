@@ -47,11 +47,10 @@ public class ArraysClassUsage {
 				} 
 		// if the index is in between 1 and the length of the array, I put the key at the 'a[index]' and shift other values to the right
 		else { 
-			newArray[index] = key; 
 			for(int i = 0; i < newArray.length; i++) { 
 				if(i < index) newArray[i] = a[i]; 
 				else if(i > index) newArray[i] = a[i-1]; 
-				else continue; 
+				else newArray[index] = key; 
 			}	
 		}
 		return newArray;	
