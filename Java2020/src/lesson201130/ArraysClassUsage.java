@@ -29,8 +29,17 @@ public class ArraysClassUsage {
 	}
 
 	private static int[] insert(int[] a, int key, int index) {
-		// TODO this is your home work
-		return null;
+		int[] res = new int[a.length + 1];
+
+		for (int i = 0, j = 0; i < index; i++, j++) {
+			if (i == index) {
+				res[j] = key;
+				j++;
+			}
+			res[j] = a[i];
+		}
+
+		return res;
 	}
 
 }
