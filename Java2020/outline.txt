@@ -15,9 +15,9 @@
 * [x]Test equality between Strings and other objects using == and equals ()
 * [x]Create if and if/else and ternary constructs
 * [x]Use a switch statement
-[]Creating and Using Arrays
-* []Declare, instantiate, initialize and use a one-dimensional array
-* []Declare, instantiate, initialize and use multi-dimensional arrays
+[x]Creating and Using Arrays
+* [x]Declare, instantiate, initialize and use a one-dimensional array
+* [x]Declare, instantiate, initialize and use multi-dimensional arrays
 [x]Using Loop Constructs
 * [x]Create and use while loops
 * [x]Create and use for loops including the enhanced for loop
@@ -31,10 +31,10 @@
 * []Create and overload constructors
 * []Differentiate between default and user defined constructors
 []Working with Selected classes from the Java API
-* []Manipulate data using the StringBuilder class and its methods
-* []Create and manipulate Strings
+* [x]Manipulate data using the StringBuilder class and its methods
+* [x]Create and manipulate Strings
 * []Create and manipulate calendar data using classes from java.time.LocalDateTime,  java.time.LocalDate, java.time.LocalTime, java.time.format.DateTimeFormatter, java.time.Period
-* []Declare and use an ArrayList of a given type
+* [x]Declare and use an ArrayList of a given type
 * []Write a simple Lambda expression that consumes a Lambda Predicate expression
 []Encapsulation
 * []Apply access modifiers to class and class members

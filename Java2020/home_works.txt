@@ -6,3 +6,15 @@ convert int to bit string with padding 0s on the left
 implement method
 	int[] insert(int[] a, int key, int index)
 	
+     0   1  2  3   4   5	
+	[10, 0, 3, 4, -1, 30]   9  3
+
+	[10, 0, 3, 4, -1, 30, 0]  
+	
+	[0 , 0, 0, 0,  0,  0, 0]
+	
+	[10, 0, 3, 0,  0,  0, 0]
+
+	[10, 0, 3, 9,  0,  0, 0]
+	
+	[10, 0, 3, 9, 4, -1, 30]
