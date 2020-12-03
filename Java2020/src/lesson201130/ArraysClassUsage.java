@@ -29,17 +29,13 @@ public class ArraysClassUsage {
 	}
 
 	private static int[] insert(int[] a, int key, int index) {
-		int[] res = new int[a.length + 1];
+		int[] result = new int[a.length + 1];
 
-		for (int i = 0, j = 0; i < index; i++, j++) {
-			if (i == index) {
-				res[j] = key;
-				j++;
-			}
-			res[j] = a[i];
-		}
+		System.arraycopy(a, 0, result, 0, index);
+		result[index] = key;
+		System.arraycopy(a, index, result, index + 1, a.length - index);
 
-		return res;
+		return result;
 	}
 
 }
