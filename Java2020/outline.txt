@@ -25,9 +25,9 @@
 * [x]Compare loop constructs
 * [x]Use break and continue
 []Java Class Design
-* []Create methods with arguments and return values; including overloaded methods
-* []Apply the static keyword to methods and fields
-* []Determine the effect upon object references and primitive values when they are passed  into methods that change the values
+* [x]Create methods with arguments and return values; including overloaded methods
+* [x]Apply the static keyword to methods and fields
+* [x]Determine the effect upon object references and primitive values when they are passed  into methods that change the values
 * []Create and overload constructors
 * []Differentiate between default and user defined constructors
 []Working with Selected classes from the Java API
