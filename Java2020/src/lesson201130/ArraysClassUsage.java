@@ -29,8 +29,10 @@ public class ArraysClassUsage {
 	}
 
 	private static int[] insert(int[] a, int key, int index) {
-		int[] aux = Arrays.copyOf(a, a.length + a.length >> 1);
+		int[] aux = new int[a.length+1];
+		System.arraycopy(a, 0, aux, 0, index);
 		aux[index] = key;
+		System.arraycopy(a, index, aux, index+1, a.length-index);
 		return aux;
 	}
 
