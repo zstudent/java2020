@@ -31,10 +31,8 @@ public class ArraysClassUsage {
 	private static int[] insert(int[] a, int key, int index) {
 		int len = a.length;
 		int[] res = new int[len+1];
-		System.arraycopy(a, 0, res, 0, len);
-		for(int i = len; i>index; i--){
-			res[i] = res[i-1];
-		}
+		System.arraycopy(a, 0, res, 0, index);
+		System.arraycopy(a, index, res, index+1, len-index);
 		res[index] = key;
 		return res;
 	}
