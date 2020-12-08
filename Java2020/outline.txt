@@ -40,11 +40,11 @@
 * [x]Apply access modifiers to class and class members
 * [x]Apply encapsulation principles to a class
 []Inheritance
-* []Describe inheritance and its benefits
-* []Develop code that overrides methods
+* [x]Describe inheritance and its benefits
+* [x]Develop code that overrides methods
 * []Implement inheritance including visibility modifiers and composition
 * []Determine when casting is necessary
-* []Use super and this to access objects and constructors
+* [x]Use super and this to access objects and constructors
 * []Develop code that uses abstract classes and methods
 []Polymorphism
 * []Describe Interfaces
