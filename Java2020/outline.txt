@@ -35,7 +35,9 @@
 * [x]Create and manipulate Strings
 * [self-education]Create and manipulate calendar data using classes from java.time.LocalDateTime,  java.time.LocalDate, java.time.LocalTime, java.time.format.DateTimeFormatter, java.time.Period
 * [x]Declare and use an ArrayList of a given type
-* []Write a simple Lambda expression that consumes a Lambda Predicate expression
+
+--->  * []Write a simple Lambda expression that consumes a Lambda Predicate expression
+
 [x]Encapsulation
 * [x]Apply access modifiers to class and class members
 * [x]Apply encapsulation principles to a class

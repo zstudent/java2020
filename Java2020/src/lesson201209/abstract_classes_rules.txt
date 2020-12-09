@@ -1,0 +1,12 @@
+CLASSES
+1. can't instantiate abstract class
+2. may have abstract methods (0+)
+3. private is allowed for nested classes (and makes no sense for outer level classes)
+4. it doesn't make sense to declare abstract class final !!! (and is prohibited)
+5. descendants of abstract must implement abstract methods from parents 
+	OR be abstract themselves.
+
+METHODS
+1. abstract methods may be declared only inside abstract classes
+2. no private and final keywords for abstract methods
+3. may not have body (implementation)
