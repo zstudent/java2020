@@ -10,4 +10,3 @@ METHODS
 1. abstract methods may be declared only inside abstract classes
 2. no private and final keywords for abstract methods
 3. may not have body (implementation)
-ssss
