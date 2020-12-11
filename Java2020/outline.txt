@@ -41,26 +41,26 @@
 [x]Encapsulation
 * [x]Apply access modifiers to class and class members
 * [x]Apply encapsulation principles to a class
-[]Inheritance
+[x]Inheritance
 * [x]Describe inheritance and its benefits
 * [x]Develop code that overrides methods
-* []Implement inheritance including visibility modifiers and composition
-* []Determine when casting is necessary
+* [x]Implement inheritance including visibility modifiers and composition
+* [x]Determine when casting is necessary
 * [x]Use super and this to access objects and constructors
-* []Develop code that uses abstract classes and methods
+* [x]Develop code that uses abstract classes and methods
 []Polymorphism
-* []Describe Interfaces
-* []Differentiate between the type of a reference and the type of an object
-* []Describe polymorphism
-* []Develop code that makes use of polymorphism
-* []Override hashCode, equals, and toString methods from Object class
-* []Create and use singleton classes and immutable classes
-* []Develop code that uses static keyword on initialize blocks, variables, methods, and classes
+* [x]Describe Interfaces
+* [x]Differentiate between the type of a reference and the type of an object
+* [x]Describe polymorphism
+* [x]Develop code that makes use of polymorphism
+-(later)->* []Override hashCode, equals, and toString methods from Object class
+* [x]Create and use singleton classes and immutable classes
+* [x]Develop code that uses static keyword on initialize blocks, variables, methods, and classes
 []Advanced Java Class Design
-* []Make overview of Encapsulation, Inheritance, Polymorphism
-* []Develop code that uses the final keyword
-* []Create inner classes including static inner class, local class, nested class, and anonymous inner class
-* []Develop code that declares, implements and/or extends interfaces and use the @Override annotation.
+* [x]Make overview of Encapsulation, Inheritance, Polymorphism
+* [x]Develop code that uses the final keyword
+-->>* []Create inner classes including static inner class, local class, nested class, and anonymous inner class
+* [x]Develop code that declares, implements and/or extends interfaces and use the @Override annotation.
 []Handling Exceptions
 * []Differentiate among checked exceptions, unchecked exceptions, and Errors
 * []Create a try-catch block and determine how exceptions alter normal program flow
