@@ -1,6 +1,8 @@
-package lesson201209.homework;
+package lesson201209.homework.company;
 
 import java.util.List;
+
+import lesson201209.homework.employee.Employee;
 
 public abstract class Company {
 	

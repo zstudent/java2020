@@ -1,4 +1,4 @@
-package lesson201209.homework;
+package lesson201209.homework.employee;
 
 public class ProjectManager extends Employee{
 	
@@ -13,12 +13,12 @@ public class ProjectManager extends Employee{
 	}
 
 	@Override
-	void mainJob() {
+	public void mainJob() {
 		System.out.println("Leads the project, holds business communication with customers");
 	}
 
 	@Override
-	void doJob(String task) {
+	public void doJob(String task) {
 		System.out.println("Starting thinking about the task: " + task);
 	}
 

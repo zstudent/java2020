@@ -1,16 +1,16 @@
-package lesson201209.homework;
+package lesson201209.homework.employee;
 
 public abstract class Employee {
 	
-	String firstName;
-	String lastName;
-	int workingHours;
-	String position;
+	protected String firstName;
+	protected String lastName;
+	protected int workingHours;
+	protected String position;
 	
 	
-	abstract void mainJob();
+	public abstract void mainJob();
 	
-	abstract void doJob(String task);
+	public abstract void doJob(String task);
 	
 	@Override
 	public String toString() {
