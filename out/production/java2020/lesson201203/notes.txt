@@ -1,0 +1,19 @@
+
+[  1   ]  args
+[ 20   ]  result
+[  8   ]  <--- Top Of Stack
+[ 10   ]  parameter, i
+[ 20   ]
+[      ]
+[      ]
+[      ]
+[      ]
+
+
+
+               1  [  args array stuff  ]
+               
+               
+[  10  ] x from main
+[   9  ]  return line              
+[  20  ] x from doIt

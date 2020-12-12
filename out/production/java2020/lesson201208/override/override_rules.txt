@@ -1,0 +1,7 @@
+
+Override rules
+
+1. method signature (name & list of parameter types) must be the same
+2. access modifier must be same or less strict
+3. throws declaration rules (to be discussed later)
+4. return type must be covariant to the parent 

@@ -1,0 +1,17 @@
+Method Declaration Parts
+
+Access modifier   public/protected/(default/package)/private
+
+Optional specifier   abstract/static/final/synchronized/native/strictfp
+
+Optional generic type declaration
+
+Return type  void/primitive/reference
+
+Method name
+
+Parameter list  (in parenthesis, may be empty)  
+
+Optional throws declaration:  list of Exceptions
+
+Method body   {may be empty}  or ; (for abstract/native/interfaces) 
