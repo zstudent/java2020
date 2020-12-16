@@ -30,14 +30,11 @@
 * [x]Determine the effect upon object references and primitive values when they are passed  into methods that change the values
 * [x]Create and overload constructors
 * [x]Differentiate between default and user defined constructors
-[]Working with Selected classes from the Java API
+[x]Working with Selected classes from the Java API
 * [x]Manipulate data using the StringBuilder class and its methods
 * [x]Create and manipulate Strings
 * [self-education]Create and manipulate calendar data using classes from java.time.LocalDateTime,  java.time.LocalDate, java.time.LocalTime, java.time.format.DateTimeFormatter, java.time.Period
 * [x]Declare and use an ArrayList of a given type
-
---->  * []Write a simple Lambda expression that consumes a Lambda Predicate expression
-
 [x]Encapsulation
 * [x]Apply access modifiers to class and class members
 * [x]Apply encapsulation principles to a class
@@ -48,32 +45,30 @@
 * [x]Determine when casting is necessary
 * [x]Use super and this to access objects and constructors
 * [x]Develop code that uses abstract classes and methods
-[]Polymorphism
+[x]Polymorphism
 * [x]Describe Interfaces
 * [x]Differentiate between the type of a reference and the type of an object
 * [x]Describe polymorphism
 * [x]Develop code that makes use of polymorphism
--(later)->* []Override hashCode, equals, and toString methods from Object class
 * [x]Create and use singleton classes and immutable classes
 * [x]Develop code that uses static keyword on initialize blocks, variables, methods, and classes
-[]Advanced Java Class Design
+[x]Advanced Java Class Design
 * [x]Make overview of Encapsulation, Inheritance, Polymorphism
 * [x]Develop code that uses the final keyword
--->>* []Create inner classes including static inner class, local class, nested class, and anonymous inner class
+* [x]Create inner classes including static inner class, local class, nested class, and anonymous inner class
 * [x]Develop code that declares, implements and/or extends interfaces and use the @Override annotation.
 []Handling Exceptions
-* []Differentiate among checked exceptions, unchecked exceptions, and Errors
-* []Create a try-catch block and determine how exceptions alter normal program flow
-* []Describe the advantages of Exception handling
-* []Create and invoke a method that throws an exception
+* [x]Differentiate among checked exceptions, unchecked exceptions, and Errors
+* [x]Create a try-catch block and determine how exceptions alter normal program flow
+* [x]Describe the advantages of Exception handling
+* [x]Create and invoke a method that throws an exception
 * []Recognize common exception classes (such as NullPointerException, ArithmeticException, ArrayIndexOutOfBoundsException, ClassCastException)
 * []Use catch, multi-catch, and finally clauses
-* []Use Autoclose resources with a try-with-resources statement
-* []Create custom exceptions and Auto-closeable resources
-* []Test invariants by using assertions
 []Generics and Collections
 * []Create and use a generic class
-* []Create and use ArrayList, TreeSet, TreeMap, and ArrayDeque objects
+* []Create and use ArrayList, TreeSet, and ArrayDeque objects
+* []Create and use Maps (HashMap, LinkedHashMap, TreeMap)
+-(later)->* []Override hashCode, equals, and toString methods from Object class
 * []Use java.util.Comparator and java.lang.Comparable interfaces
 * []Collections Streams and Filters
 * []Iterate using forEach methods of Streams and List
@@ -81,8 +76,10 @@
 * []Filter a collection by using lambda expressions
 * []Use method references with Streams
 * []Use enumerated types including methods, and constructors in an enum type
+---> [] Various types of inheritance usage
 []Lambda Built-in Functional Interfaces
 * []Create and use Lambda expressions
+* []Write a simple Lambda expression that consumes a Lambda Predicate expression
 * []Use  the built-in interfaces included in the java.util.function package such as Predicate, Consumer, Function, and Supplier
 * []Develop code that uses primitive versions of functional interfaces
 * []Develop code that uses binary versions of functional interfaces
@@ -102,6 +99,9 @@
 []Java I/O Fundamentals
 * []Read and write data from the console
 * []Use BufferedReader, BufferedWriter, File, FileReader, FileWriter, FileInputStream, FileOutputStream, ObjectOutputStream, ObjectInputStream, and PrintWriter in the java.io package.
+* []Use Autoclose resources with a try-with-resources statement
+* []Create custom exceptions and Auto-closeable resources
+* []Test invariants by using assertions
 []Java File I/O (NIO.2)
 * []Use Path interface to operate on file and directory paths
 * []Use Files class to check, read, delete, copy, move, manage metadata of a file or directory
