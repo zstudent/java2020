@@ -57,13 +57,13 @@
 * [x]Develop code that uses the final keyword
 * [x]Create inner classes including static inner class, local class, nested class, and anonymous inner class
 * [x]Develop code that declares, implements and/or extends interfaces and use the @Override annotation.
-[]Handling Exceptions
+[x]Handling Exceptions
 * [x]Differentiate among checked exceptions, unchecked exceptions, and Errors
 * [x]Create a try-catch block and determine how exceptions alter normal program flow
 * [x]Describe the advantages of Exception handling
 * [x]Create and invoke a method that throws an exception
-* []Recognize common exception classes (such as NullPointerException, ArithmeticException, ArrayIndexOutOfBoundsException, ClassCastException)
-* []Use catch, multi-catch, and finally clauses
+* [x]Recognize common exception classes (such as NullPointerException, ArithmeticException, ArrayIndexOutOfBoundsException, ClassCastException)
+* [x]Use catch, multi-catch, and finally clauses
 []Generics and Collections
 * []Create and use a generic class
 * []Create and use ArrayList, TreeSet, and ArrayDeque objects
