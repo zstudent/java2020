@@ -1,0 +1,7 @@
+               X
+add("one"):    ["one"] -> x
+                  FL
+add("two"):    ["one"] -> ["two"] -> x
+                   F         L
+add("three"):  ["one"] -> ["two"] -> ["three"] -> x
+                   F                      L

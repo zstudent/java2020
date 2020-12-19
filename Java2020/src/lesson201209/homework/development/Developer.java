@@ -4,7 +4,7 @@ import lesson201209.homework.Programmer;
 
 import java.util.List;
 
-public abstract class Developer extends Programmer {
+public abstract class Developer extends Programmer{
 
     public List<String> frameworks;
 

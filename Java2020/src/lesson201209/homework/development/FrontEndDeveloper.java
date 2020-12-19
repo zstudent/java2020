@@ -2,9 +2,16 @@ package lesson201209.homework.development;
 
 import java.util.List;
 
-public class FrontEndDeveloper extends Developer {
+public class FrontEndDeveloper extends Developer implements Comparable<FrontEndDeveloper>{
 
-    public FrontEndDeveloper(List<String> tools, List<String> frontEndLanguages,List<String> frameworks){
+    String firstName;
+    String lastName;
+    int age;
+
+    public FrontEndDeveloper(String firstName, String lastName, int age, List<String> tools, List<String> frontEndLanguages,List<String> frameworks){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
         this.tools = tools;
         this.programmingLanguages = frontEndLanguages;
         this.frameworks = frameworks;
@@ -40,4 +47,38 @@ public class FrontEndDeveloper extends Developer {
         return this.frameworks;
     }
 
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+    @Override
+    public int compareTo(FrontEndDeveloper o) {
+        int fName = this.firstName.compareTo(o.firstName);
+        if(fName == 0){
+            int lName = this.lastName.compareTo(o.lastName);
+            if(lName == 0) {
+                return this.age - o.age;
+            }
+            else{
+                return lName;
+            }
+        }
+        return fName;
+    }
+
+    @Override
+    public String toString() {
+        return "FrontEndDeveloper{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

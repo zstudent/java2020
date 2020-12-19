@@ -7,8 +7,7 @@ import lesson201209.homework.development.Developer;
 import lesson201209.homework.development.FrontEndDeveloper;
 import lesson201209.homework.testing.Tester;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class RunHomework {
 
@@ -18,23 +17,36 @@ public class RunHomework {
         List<String> frontEndLanguages = Arrays.asList("JavaScript","TypeScript","Dart","HTML","CSS");
         List<String> frontEndFrameworks = Arrays.asList("Angular","React","Vue.js");
 
-
         List<String> backEndTools = Arrays.asList("Postman","Git", "FindBug","Powerful IDE-s","DBMS");
         List<String> backEndLanguages = Arrays.asList("Java","C#","Python","Ruby","PHP");
         List<String> backEndFrameworks = Arrays.asList("Spring",".NET","Django");
 
+        /*
         List<String> dataScientistAnalyticsLibraries = Arrays.asList("NumPy","scikit-learn","pandas","TensorFlow","PyTorch");
-        List<String> dataSCientistProgrammingLanguages = Arrays.asList("Python","R","Julia","SAS","MATLAB");
+        List<String> dataSCientistProgrammingLanguages = Arrays.asList("Python","R","Julia","SAS","MATLAB");*/
 
-        List<Developer> developers = Arrays.asList(
-                new FrontEndDeveloper(frontEndTools,frontEndLanguages,frontEndFrameworks),
-                new BackEndDeveloper(backEndTools,backEndLanguages,backEndFrameworks)
-        );
+        List<FrontEndDeveloper> frontEndDevs = new ArrayList<FrontEndDeveloper>();
 
-        developers.forEach(Programmer::writeCode);
-        developers.forEach(Developer::develop);
+        frontEndDevs.add(new FrontEndDeveloper("Hafthor", "Bjornsson", 35, frontEndTools,frontEndLanguages,frontEndFrameworks));
+        frontEndDevs.add(new FrontEndDeveloper("Zydrunas", "Savickas", 50, frontEndTools,frontEndLanguages,frontEndFrameworks));
+        frontEndDevs.add(new FrontEndDeveloper("Terry", "Hollands", 40, frontEndTools,frontEndLanguages,frontEndFrameworks));
+        frontEndDevs.add(new FrontEndDeveloper("Zydrunas", "Lalas", 40, frontEndTools,frontEndLanguages,frontEndFrameworks));
 
-        System.out.println("----------------------------------------");
+        List<BackEndDeveloper> backEndDevs = new ArrayList<BackEndDeveloper>();
+
+        backEndDevs.add(new BackEndDeveloper("Tom", "Stoltman", 24, backEndTools, backEndLanguages,backEndLanguages));
+        backEndDevs.add(new BackEndDeveloper("Brian", "Shaw", 35, backEndTools, backEndLanguages,backEndLanguages));
+        backEndDevs.add(new BackEndDeveloper("Konstantine", "Janashia", 30, backEndTools, backEndLanguages,backEndLanguages));
+        backEndDevs.add(new BackEndDeveloper("Tom", "Stoltman", 20, backEndTools, backEndLanguages,backEndLanguages));
+
+
+        Collections.sort(frontEndDevs);
+        Collections.sort(backEndDevs);
+
+        System.out.println(frontEndDevs);
+        System.out.println(backEndDevs);
+
+       /* System.out.println("----------------------------------------");
 
         Analyst dataScientist = new DataScientist(dataScientistAnalyticsLibraries,dataSCientistProgrammingLanguages);
         dataScientist.writeCode();
@@ -44,7 +56,7 @@ public class RunHomework {
 
         Tester tester = new Tester();
         tester.writeCode();
-        tester.test();
+        tester.test();*/
     }
 
 }

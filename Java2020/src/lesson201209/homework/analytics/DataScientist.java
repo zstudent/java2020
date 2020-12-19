@@ -2,7 +2,7 @@ package lesson201209.homework.analytics;
 
 import java.util.List;
 
-public class DataScientist extends Analyst {
+public class DataScientist extends Analyst implements Comparable<DataScientist>{
 
     public DataScientist(List<String> analyticsLibraries, List<String> programmingLanguages){
         this.analyticsLibraries = analyticsLibraries;
@@ -30,5 +30,10 @@ public class DataScientist extends Analyst {
 
     public List<String> getAnalyticsLibraries(){
         return this.analyticsLibraries;
+    }
+
+    @Override
+    public int compareTo(DataScientist o) {
+        return 0;
     }
 }
