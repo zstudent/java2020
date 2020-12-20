@@ -4,13 +4,12 @@ public abstract class Employee implements Comparable<Employee> {
 
 
     @Override
-    public int compareTo(final Employee o) {
-        int years = yearsOfExperience.compareTo(o.yearsOfExperience);
-        if (years == 0) {
-            return yearsOfExperience - o.yearsOfExperience;
+    public int compareTo(Employee o) {
+        if (name.length() != o.name.length()) {
+            return name.length() - o.name.length();
+        } else {
+            return yearsOfExperience.compareTo(o.yearsOfExperience);
         }
-
-        return years;
     }
 
     static void nameIs(String name) {
