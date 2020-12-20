@@ -26,3 +26,5 @@ implement method
 	1. Find and apply  static source code analysis tool, f.e. FindBug, in your IDE
 	2. Create a hierarchy of classes with abstract in the root. theme: Software Development 	
 	
+2020-12-18
+	Implement Comparable in your classes, created in previous task.
