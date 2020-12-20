@@ -4,6 +4,10 @@ import lesson201209.homework.employee.Employee;
 
 public abstract class Engineer extends Employee {
 
+	public Engineer(String firstName, String lastName, int workingHours, String position, double amountOfExperience) {
+		super(firstName, lastName, workingHours, position, amountOfExperience);
+	}
+
 	@Override
 	public void mainJob() {
 		System.out.println("Designs, builds and maintains engines machines or structures");

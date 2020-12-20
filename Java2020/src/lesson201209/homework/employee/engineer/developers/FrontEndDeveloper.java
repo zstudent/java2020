@@ -5,15 +5,11 @@ import lesson201209.homework.employee.engineer.Engineer;
 public class FrontEndDeveloper extends Developer {
 
 	
-	public FrontEndDeveloper(String firstName, String lastName,
-			int workingHours, String position) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.workingHours = workingHours;
-		this.position = position;
-	
+	public FrontEndDeveloper(String firstName, String lastName, int workingHours, String position,
+			double amountOfExperience) {
+		super(firstName, lastName, workingHours, position, amountOfExperience);
 	}
-	
+
 	@Override
 	public void mainJob() {
 		System.out.println("Builds web application");

@@ -1,6 +1,7 @@
 package lesson201209.homework;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 import lesson201209.homework.company.SoftwareDevelopment;
 import lesson201209.homework.employee.ProjectManager;
@@ -21,34 +22,34 @@ public class SoftwareDevelopmentCompanyFactor {
 		SoftwareDevelopment company = new SoftwareDevelopment("Jorjia", "God", "Gods' land");
 		
 		BackEndDeveloper backDev1 = new BackEndDeveloper(
-				"Irakli", "Kobakhidze", 41, "Junior");
+				"Irakli", "Kobakhidze", 41, "Junior", 1);
 		
 		BackEndDeveloper backDev2 = new BackEndDeveloper(
-				"Gia", "Volski", 41, "Senior");
+				"Gia", "Volski", 41, "Senior", 5);
 		
 		FrontEndDeveloper frontDev1 = new FrontEndDeveloper(
-				"Mamuka", "Mdinaradze", 41, "Middle");
+				"Mamuka", "Mdinaradze", 41, "Middle", 1.5);
 		
 		Intern intern1 = new Intern(
-				"Aleko", "Elisashvili", 27, "Cexavik");
+				"Aleko", "Elisashvili", 27, "Cexavik", 0.5);
 		
 		ProjectManager prjMan1 = new ProjectManager(
-				"Zurab Girchi", "Jafaridze", 36, "Lead");
+				"Zurab Girchi", "Jafaridze", 36, "Lead", 7);
 		
 		AutomationTester AT1 = new AutomationTester(
-				"Georgias", "Citizen", 8, "Lead");
+				"Georgias", "Citizen", 8, "Lead", 7);
 		
 		ManualQASpecialist MQAS = new ManualQASpecialist(
-				"Georgias", "Citizen", 8, "Junior");
+				"Georgias", "Citizen", 8, "Junior", 1.2);
 
 		ManualQASpecialist QA1 = new ManualQASpecialist(
-				"Tamar", "Zhvania", Integer.MAX_VALUE, "Lead Cexavik");
+				"Tamar", "Zhvania", Integer.MAX_VALUE, "Lead Cexavik", 999);
 		
 		AdministrativeManager AM1 = new AdministrativeManager(
-				"Archil", "Talakvadze", 41, "Head Cexavik");
+				"Archil", "Talakvadze", 41, "Head Cexavik", 9999);
 		
 		AdministrativeCoordinator AC1 = new AdministrativeCoordinator(
-				"Lasha", "Natsvlishvili", Integer.MAX_VALUE, "Junior Cexavik");
+				"Lasha", "Natsvlishvili", Integer.MAX_VALUE, "Junior Cexavik", 1);
 		
 		System.out.println("Hiring employees...\n");
 		company.hireEmployees(Arrays.asList(
@@ -56,7 +57,9 @@ public class SoftwareDevelopmentCompanyFactor {
 				intern1, prjMan1, QA1,
 				AM1, AC1, AT1, MQAS
 				));
-
+		
+		Collections.sort(company.getEmployees());
+		
 		
 		System.out.println("Our employees: \n");
 		company.getEmployees().forEach(employee -> {

@@ -5,15 +5,10 @@ import lesson201209.homework.employee.Employee;
 public class Intern extends Engineer {
 
 	
-	public Intern(String firstName, String lastName,
-			int workingHours, String position) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.workingHours = workingHours;
-		this.position = position;
-	
+	public Intern(String firstName, String lastName, int workingHours, String position, double amountOfExperience) {
+		super(firstName, lastName, workingHours, position, amountOfExperience);
 	}
-	
+
 	@Override
 	public void mainJob() {
 		System.out.println("Watchs trainings and does homeworks");

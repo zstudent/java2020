@@ -4,14 +4,10 @@ import lesson201209.homework.employee.engineer.Engineer;
 
 public class BackEndDeveloper extends Developer {
 	
-	
-	public BackEndDeveloper(String firstName, String lastName,
-			int workingHours, String position) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.workingHours = workingHours;
-		this.position = position;
-	
+
+	public BackEndDeveloper(String firstName, String lastName, int workingHours, String position,
+			double amountOfExperience) {
+		super(firstName, lastName, workingHours, position, amountOfExperience);
 	}
 
 	@Override

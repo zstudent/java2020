@@ -2,15 +2,13 @@ package lesson201209.homework.employee.administration;
 
 public class AdministrativeCoordinator extends Administrative {
 	
-	public AdministrativeCoordinator(String firstName, String lastName,
-			int workingHours, String position) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.workingHours = workingHours;
-		this.position = position;
+
 	
+
+	public AdministrativeCoordinator(String firstName, String lastName, int workingHours, String position,
+			double amountOfExperience) {
+		super(firstName, lastName, workingHours, position, amountOfExperience);
 	}
-	
 
 	@Override
 	public void mainJob() {
