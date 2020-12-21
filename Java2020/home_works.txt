@@ -28,3 +28,7 @@ implement method
 	
 2020-12-18
 	Implement Comparable in your classes, created in previous task.
+	
+2020-12-21
+	Sort an array of 1.000.000 random integer numbers using TreeSet.
+	Measure time elapsed.
