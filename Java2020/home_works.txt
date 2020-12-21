@@ -27,4 +27,12 @@ implement method
 	2. Create a hierarchy of classes with abstract in the root. theme: Software Development 	
 	
 2020-12-18
+<<<<<<< HEAD
 	Implement Comparable in your classes, created in previous task.
+=======
+	Implement Comparable in your classes, created in previous task.
+	
+2020-12-21
+	Sort an array of 1.000.000 random integer numbers using TreeSet.
+	Measure time elapsed.
+>>>>>>> a7ad0b2d4f01f09cc1341f270e607a3fd65b96bf
