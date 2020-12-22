@@ -2,9 +2,7 @@ package lesson201221.homework;
 
 import java.io.PrintStream;
 import java.time.LocalDateTime;
-import java.util.Random;
-import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 public class RunHomework {
 
@@ -16,14 +14,22 @@ public class RunHomework {
 
     public static void main(String[] args) {
 
-        Set<Integer> set = new TreeSet<>();
+        List<Integer> arr = new ArrayList<>();
+
+        // Step 1 - create the array and fill it with random numbers
+        for (int i = 0; i < oneMillion; i++) arr.add(low + random.nextInt((high - low + 1)));
+
+        // Step 2 - put everything from the array to the TreeSet
+        Set<Integer> set = new TreeSet<>(arr);
 
         long start = System.nanoTime();
 
-        for(int i = 0; i < oneMillion; i++) set.add(low + random.nextInt((high - low + 1)));
+        // put back everything from the set to the array, Then everything in the array will be sorted.
+        arr.addAll(set);
 
         long end = System.nanoTime();
 
+        // I am surprised that it executes in less than 1 second
         System.out.println("execution time = " + (end - start) / nanoTimeToSecondsFactor + " second(s)") ;
     }
 }
