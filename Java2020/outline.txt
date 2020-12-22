@@ -65,11 +65,11 @@
 * [x]Recognize common exception classes (such as NullPointerException, ArithmeticException, ArrayIndexOutOfBoundsException, ClassCastException)
 * [x]Use catch, multi-catch, and finally clauses
 []Generics and Collections
-* []Create and use a generic class
+* [x]Create and use a generic class
 * []Create and use ArrayList, TreeSet, and ArrayDeque objects
 * []Create and use Maps (HashMap, LinkedHashMap, TreeMap)
 -(later)->* []Override hashCode, equals, and toString methods from Object class
-* []Use java.util.Comparator and java.lang.Comparable interfaces
+* [x]Use java.util.Comparator and java.lang.Comparable interfaces
 * []Collections Streams and Filters
 * []Iterate using forEach methods of Streams and List
 * []Describe Stream interface and Stream pipeline
