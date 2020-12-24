@@ -1,0 +1,40 @@
+
+
+List 
+	ArrayList *
+	LinkedList *
+	Vector    later
+	Stack     later    LIFO (Last In First Out)
+Set
+	HashSet  *     Unknown order (Undefined)  O(1)
+	TreeSet  *      Sorted order   O(logN)
+	LinkedHashSet *  Preserves order of inserting elements to it  O(1)*
+Queue               FIFO (First In First Out)
+	LinkedList *
+	ArrayDeque (FIFO, LIFO)
+Map
+	HashMap
+	TreeMap
+	LinkedHashMap
+	
+
+	
+Map - Dictionary - Associative Array
+
+             0   1   2        <--- Key
+int[] a = { 10, 20, 30 };     <--- Value
+
+int e = a[1];
+
+a[2] = 100;
+
+  Key      Value
+"Pete" - 555673789
+"John" - 555345634
+
+a["Pete] = "555673789"
+
+String phoneNumber = a.get("Pete"); //Java  
+phoneNumber = a["Pete"]   // Python
+
+a.put("Pete", "555673789");
