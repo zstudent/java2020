@@ -1,0 +1,12 @@
+Object Oriented
+Statically Typed
+OOP principles: 
+	abstraction 
+	encapsulation
+	inheritance
+	polymorphism
+Platform Independent   WORA  Write Once, Run Anywhere
+Robust
+Simple
+Secure
+Fast  JIT  Just In Time

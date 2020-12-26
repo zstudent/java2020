@@ -1,0 +1,8 @@
+main method, args
+packages & imports
+constructors, how they differ from other methods
+declarations & initializations
+fields & local variables declaration, usage, initialization & difference
+scope of fields and variables
+class structure
+garbage collection

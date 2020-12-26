@@ -1,0 +1,12 @@
+
+Switch -> Lamp
+(Switch -> Switchable) <- Lamp
+
+Interfaces: rules
+
+1. can't instantiate (but can with anonymous classes)
+2. can be empty (no methods), Label Interfaces (Serializable)
+3. can't be final
+4. no private or protected for top-level classes (outer classes)
+5. no final for methods
+6. abstract and public implicitly!

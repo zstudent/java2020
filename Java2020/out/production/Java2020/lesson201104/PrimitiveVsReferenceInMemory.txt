@@ -1,0 +1,8 @@
+
+  |  [ 0        ] int x = 0;                              Integer
+  |  [ 0xFF45EA ] Integer y = x;              0xFF45EA [     0     ]
+  |  [          ]
+  |  [          ]
+  |  [          ]
+  |  [          ]
+  V  [          ]
