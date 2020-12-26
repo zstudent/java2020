@@ -4,11 +4,12 @@ package sortArray;
 import java.util.*;
 
 public class sortOneMArray {
-    public static Set<Integer> sortedSet(Integer[] arr) {
+    public static Integer[] sortedArray(Integer[] arr) {
         List<Integer> mList = Arrays.asList(arr);
         Set<Integer> mSet = new TreeSet<>(mList);
-
-        return mSet;
+        int l = mSet.size();
+        Integer[] sArr = mSet.toArray(new Integer[l]);
+        return sArr;
     }
 
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class sortOneMArray {
 
         long startTime = System.currentTimeMillis();
 
-        Set<Integer> set = sortedSet(arr);
+        Integer[] set = sortedArray(arr);
 
         long stopTime = System.currentTimeMillis();
         long elapsedTime = stopTime - startTime;
