@@ -11,56 +11,42 @@ import java.util.Random;
 public class PhoneCallsBetweenPersons {
 	
 	
-	private static final int NUMBER_OF_PERSONS = 1000;
-	
-	private static Random rand = new Random();
-	
 	public static void main(String[] args) {
 		
 		
-		Map<Person, List<CallLog>> logsByPerson = new HashMap<>();
-		List<Person> listOfPersons = new ArrayList<>(NUMBER_OF_PERSONS);
+		List<Person> persons = Generator.randomPersons();
 		
-		for (int i = 0; i < NUMBER_OF_PERSONS; i++) {
-			listOfPersons.add(Generator.person());
-		}
+		Map<Person, List<CallLogRecord>> logsByPerson = Generator.randomPersonsCall(persons);
 		
-		
-		for (int i = 0; i < NUMBER_OF_PERSONS; i++) {
-			int callerIndex = rand.nextInt(NUMBER_OF_PERSONS);
-			int recieverIndex = rand.nextInt(NUMBER_OF_PERSONS);
-			//to avoid calling to itself
-			while (callerIndex == recieverIndex) {
-				recieverIndex = rand.nextInt(NUMBER_OF_PERSONS);
-			}
-			Person caller = listOfPersons.get(callerIndex);
-			Person reciever = listOfPersons.get(recieverIndex);
-			CallLog callLogCaller = new CallLog(LocalDateTime.now(), reciever.mobile, "outgoing");
-			CallLog callLogReciever = new CallLog(LocalDateTime.now(), caller.mobile, "incoming");	
-			logsByPerson.compute(caller, (person, callLogList) -> {
-				if (callLogList == null) return Arrays.asList(callLogCaller);
-				List<CallLog> aux = new ArrayList<>(callLogList);
-				aux.add(callLogCaller);
-				return aux;
-			});
-			logsByPerson.compute(reciever, (person, callLogList) -> {
-				if (callLogList == null) return Arrays.asList(callLogReciever);
-				List<CallLog> aux = new ArrayList<>(callLogList);
-				aux.add(callLogReciever);
-				return aux;
-			});
-		}
-		
-		
-		//Since we take persons randomly to call each other, first person from the list may not be presented in our call log
-		try {
-			for (CallLog callLog : logsByPerson.get(listOfPersons.get(1))) {
-				System.out.println(callLog.number + " " + callLog.callType);
-			}			
-		} catch (Exception e) {
-			System.out.println("PersonDoesNotExistException: Such person does not exist in our call log");
-		}
-		
+		callsByPerson(persons.get(50), logsByPerson);
 	}
-
+	
+	
+	private static void callsByPerson(Person person, Map<Person, List<CallLogRecord>> logs) {
+		
+		List<CallLogRecord> callsMadeByPerson = logs.getOrDefault(person, new ArrayList<>());
+		
+		for (CallLogRecord callLogRecord : callsMadeByPerson) {
+			StringBuilder sb = new StringBuilder();
+			sb
+			.append(callLogRecord.callType)
+			.append(" call")
+			.append("\n")
+			.append("At: ")
+			.append(callLogRecord.callDateTime)
+			.append("\n");
+			
+			if ("incoming".equals(callLogRecord.callType)) {
+				sb.append("From: ")
+				.append(callLogRecord.number)
+				.append("\n");
+			} else {
+				sb.append("To: ")
+				.append(callLogRecord.number)
+				.append("\n");
+			}
+			System.out.println(sb);
+		}
+	}
+	
 }
