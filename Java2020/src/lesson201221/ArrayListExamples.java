@@ -1,6 +1,7 @@
 package lesson201221;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class ArrayListExamples {
 	
@@ -22,7 +23,9 @@ public class ArrayListExamples {
 		list.add(15);
 		list.add(15);
 		
-		list.removeIf(t -> t < 12);
+//		list.removeIf(t -> t < 12);
+		
+		Collections.sort(list);
 		
 		System.out.println(list);
 	}
