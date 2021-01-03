@@ -7,12 +7,14 @@ public class Person implements Comparable<Person>{
 
     private String name;
     private String mobileNumber;
-    private Map<String, Integer> calls; // Key: Phone number, Value: number of times the calls occurred.
+    private Map<String, Integer> incomingCalls; // Key: Phone number, Value: number of times the calls occurred.
+    private Map<String, Integer> outgoingCalls; // same principle here
 
     public Person(String name, String mobileNumber) {
         this.name = name;
         this.mobileNumber = mobileNumber;
-        this.calls = new HashMap<>();
+        this.incomingCalls = new HashMap<>();
+        this.outgoingCalls = new HashMap<>();
     }
 
 
@@ -32,12 +34,20 @@ public class Person implements Comparable<Person>{
         this.mobileNumber = mobileNumber;
     }
 
-    public Map<String, Integer> getCalls() {
-        return calls;
+    public Map<String, Integer> getIncomingCalls() {
+        return incomingCalls;
     }
 
-    public void setCalls(Map<String, Integer> calls) {
-        this.calls = calls;
+    public void setIncomingCalls(Map<String, Integer> incomingCalls) {
+        this.incomingCalls = incomingCalls;
+    }
+
+    public Map<String, Integer> getOutgoingCalls() {
+        return outgoingCalls;
+    }
+
+    public void setOutgoingCalls(Map<String, Integer> outgoingCalls) {
+        this.outgoingCalls = outgoingCalls;
     }
 
     @Override
@@ -51,7 +61,8 @@ public class Person implements Comparable<Person>{
         return "Person{" +
                 "name='" + name + '\'' +
                 ", mobileNumber='" + mobileNumber + '\'' +
-                ", calls=" + calls +
+                ", incomingCalls=" + incomingCalls +
+                ", outgoingCalls=" + outgoingCalls +
                 '}';
     }
 
@@ -65,7 +76,7 @@ public class Person implements Comparable<Person>{
         return result;
     }
 
-    public void call(String phoneNumber){
+    public void call(String phoneNumber, Map<String, Integer> calls){
         if (calls.containsKey(phoneNumber)) {
             calls.replace(phoneNumber, calls.get(phoneNumber) + 1);
         } else {
@@ -73,7 +84,7 @@ public class Person implements Comparable<Person>{
         }
     }
 
-    public void printCallHistory(){
+    public void printCallHistory(Map<String, Integer> calls){
         System.out.println(calls);
     }
 
