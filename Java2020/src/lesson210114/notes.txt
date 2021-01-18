@@ -1,0 +1,14 @@
+
+Streams
+
+Source
+Intermediate operations
+Terminal operations
+
+
+                            Intermediate operations   Terminal operations
+Required?                             No                         Yes
+May apply multiple times?             Yes                        No
+Stream as output                       Yes                       No
+Declarative                            Yes                      No
+Stream is valid?                       Yes                     No

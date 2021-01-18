@@ -1,0 +1,7 @@
+Runnable            ()     void      run
+Predicate<T>        (T)    boolean   test
+BiPredicate<T,U>    (T,U)  boolean   test
+Consumer<T>         (T)    void      accept
+BiConsumer<T,U>     (T,U)  void      accept
+Supplier<T>         ()     T         get
+Function<T,R>       (T)    R         apply

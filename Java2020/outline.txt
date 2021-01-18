@@ -66,24 +66,24 @@
 * [x]Use catch, multi-catch, and finally clauses
 []Generics and Collections
 * [x]Create and use a generic class
-* []Create and use ArrayList, TreeSet, and ArrayDeque objects
-* []Create and use Maps (HashMap, LinkedHashMap, TreeMap)
--(later)->* []Override hashCode, equals, and toString methods from Object class
+--> * []Create and use ArrayList, TreeSet, and ArrayDeque objects DISCUSS RANGE OPERATIONS
+* [x]Create and use Maps (HashMap, LinkedHashMap, TreeMap)
+* [x]Override hashCode, equals, and toString methods from Object class
 * [x]Use java.util.Comparator and java.lang.Comparable interfaces
+--> * []Use enumerated types including methods, and constructors in an enum type
+---> [] Various types of inheritance usage
+[]Lambda Built-in Functional Interfaces
+* [x]Create and use Lambda expressions
+* [x]Write a simple Lambda expression that consumes a Lambda Predicate expression
+* [x]Use  the built-in interfaces included in the java.util.function package such as Predicate, Consumer, Function, and Supplier
+* []Develop code that uses primitive versions of functional interfaces
+* []Develop code that uses binary versions of functional interfaces
+* []Develop code that uses the UnaryOperator interface
 * []Collections Streams and Filters
 * []Iterate using forEach methods of Streams and List
 * []Describe Stream interface and Stream pipeline
 * []Filter a collection by using lambda expressions
 * []Use method references with Streams
-* []Use enumerated types including methods, and constructors in an enum type
----> [] Various types of inheritance usage
-[]Lambda Built-in Functional Interfaces
-* []Create and use Lambda expressions
-* []Write a simple Lambda expression that consumes a Lambda Predicate expression
-* []Use  the built-in interfaces included in the java.util.function package such as Predicate, Consumer, Function, and Supplier
-* []Develop code that uses primitive versions of functional interfaces
-* []Develop code that uses binary versions of functional interfaces
-* []Develop code that uses the UnaryOperator interface
 []Java Stream API
 * []Develop code to extract data from an object using peek() and map() methods including primitive versions of the map() method
 * []Search for data by using search methods of the Stream classes including findFirst, findAny, anyMatch, allMatch, noneMatch
