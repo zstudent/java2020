@@ -53,6 +53,7 @@
 * [x]Determine when casting is necessary
 * [x]Use super and this to access objects and constructors
 * [x]Develop code that uses abstract classes and methods
+---> * [] Various types of inheritance usage
 
 [x]Polymorphism
 * [x]Describe Interfaces
@@ -81,36 +82,34 @@
 * [x]Work with dates and times across timezones and manage changes resulting from daylight savings including Format date and times values
 * [x]Define and create and manage date-based and time-based events using Instant, Period, Duration, and TemporalUnit
 
-[]Generics and Collections
+[x]Generics and Collections
 * [x]Create and use a generic class
 * [x]Create and use ArrayList, TreeSet, and ArrayDeque objects DISCUSS RANGE OPERATIONS
 * [x]Create and use Maps (HashMap, LinkedHashMap, TreeMap)
 * [x]Override hashCode, equals, and toString methods from Object class
 * [x]Use java.util.Comparator and java.lang.Comparable interfaces
----> * []Use enumerated types including methods, and constructors in an enum type
----> * [] Various types of inheritance usage
 
-[]Lambda Built-in Functional Interfaces
+[x]Lambda Built-in Functional Interfaces
 * [x]Create and use Lambda expressions
 * [x]Write a simple Lambda expression that consumes a Lambda Predicate expression
 * [x]Use  the built-in interfaces included in the java.util.function package such as Predicate, Consumer, Function, and Supplier
-* []Develop code that uses primitive versions of functional interfaces
-* []Develop code that uses binary versions of functional interfaces
-* []Develop code that uses the UnaryOperator interface
-* []Collections Streams and Filters
-* []Iterate using forEach methods of Streams and List
+* [x]Develop code that uses primitive versions of functional interfaces
+* [x]Develop code that uses binary versions of functional interfaces
+* [x]Develop code that uses the UnaryOperator interface
+* [x]Collections Streams and Filters
+* [x]Iterate using forEach methods of Streams and List
 * [x]Describe Stream interface and Stream pipeline
 * [x]Filter a collection by using lambda expressions
-* []Use method references with Streams
+* [x]Use method references with Streams
 
-[]Java Stream API
+[x]Java Stream API
 * [x]Develop code to extract data from an object using peek() and map() methods including primitive versions of the map() method
 * [x]Search for data by using search methods of the Stream classes including findFirst, findAny, anyMatch, allMatch, noneMatch
-* []Develop code that uses the Optional class
-* []Develop code that uses Stream data methods and calculation methods
+* [x]Develop code that uses the Optional class
+* [x]Develop code that uses Stream data methods and calculation methods
 * [x]Sort a collection using Stream API
-* []Save results to a collection using the collect method
-  []Group/partition data using the Collectors class
+* [x]Save results to a collection using the collect method
+  [x]Group/partition data using the Collectors class
 * [x]Use flatMap() methods in the Stream API
 
 []Java I/O Fundamentals
@@ -138,20 +137,19 @@
 * []Identify the components required to connect to a database using the DriverManager class including the JDBC URL
 * []Submit queries and read results from the database including creating statements, returning result sets, iterating through the results, and properly closing result sets, statements, and connections
 
-[]Localization
-* []Read and set the locale by using the Locale object
-* []Create and read a Properties file
-* []Build a resource bundle for each locale and load a resource bundle in an application
+[x]Localization  SELF-EDUCATION
+* [x]Read and set the locale by using the Locale object
+* [x]Create and read a Properties file
+* [x]Build a resource bundle for each locale and load a resource bundle in an application
 
 []Other concepts
 * [x]equals, hashcode
 * []Enums
 * []Reflection
 * []Annotations
-* []JDBC
 * []Recursion
-* []I/O Fundamentals
-* []NIO.2 (Files)
 * []Networking
 * []Regular expressions fundamentals
 * []XML review
+* [] Spring workshop
+* [] Vert.x workshop
