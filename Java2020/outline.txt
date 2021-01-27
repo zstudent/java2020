@@ -4,40 +4,48 @@
 * [x]Create executable Java applications with a main method; run a Java program from the command line; produce console output
 * [x]Import other Java packages to make them accessible in your code
 * [x]Compare and contrast the features and components of Java such as: platform independence, object orientation, encapsulation, etc.
+
 [x]Working With Java Data Types
 * [x]Declare and initialize variables (including casting of primitive data types)
 * [x]Differentiate between object reference variables and primitive variables
 * [x]Know how to read or write to object fields
 * [x]Explain an Object's Lifecycle (creation, "dereference by reassignment" and garbage collection)
 * [x]Develop code that uses wrapper classes such as Boolean, Double, and Integer
+
 [x]Using Operators and Decision Constructs
 * [x]Use Java operators; use parentheses to override operator precedence
 * [x]Test equality between Strings and other objects using == and equals ()
 * [x]Create if and if/else and ternary constructs
 * [x]Use a switch statement
+
 [x]Creating and Using Arrays
 * [x]Declare, instantiate, initialize and use a one-dimensional array
 * [x]Declare, instantiate, initialize and use multi-dimensional arrays
+
 [x]Using Loop Constructs
 * [x]Create and use while loops
 * [x]Create and use for loops including the enhanced for loop
 * [x]Create and use do/while loops
 * [x]Compare loop constructs
 * [x]Use break and continue
+
 [x]Java Class Design
 * [x]Create methods with arguments and return values; including overloaded methods
 * [x]Apply the static keyword to methods and fields
 * [x]Determine the effect upon object references and primitive values when they are passed  into methods that change the values
 * [x]Create and overload constructors
 * [x]Differentiate between default and user defined constructors
+
 [x]Working with Selected classes from the Java API
 * [x]Manipulate data using the StringBuilder class and its methods
 * [x]Create and manipulate Strings
 * [self-education]Create and manipulate calendar data using classes from java.time.LocalDateTime,  java.time.LocalDate, java.time.LocalTime, java.time.format.DateTimeFormatter, java.time.Period
 * [x]Declare and use an ArrayList of a given type
+
 [x]Encapsulation
 * [x]Apply access modifiers to class and class members
 * [x]Apply encapsulation principles to a class
+
 [x]Inheritance
 * [x]Describe inheritance and its benefits
 * [x]Develop code that overrides methods
@@ -45,6 +53,8 @@
 * [x]Determine when casting is necessary
 * [x]Use super and this to access objects and constructors
 * [x]Develop code that uses abstract classes and methods
+* [x]Various types of inheritance usage
+
 [x]Polymorphism
 * [x]Describe Interfaces
 * [x]Differentiate between the type of a reference and the type of an object
@@ -52,11 +62,13 @@
 * [x]Develop code that makes use of polymorphism
 * [x]Create and use singleton classes and immutable classes
 * [x]Develop code that uses static keyword on initialize blocks, variables, methods, and classes
+
 [x]Advanced Java Class Design
 * [x]Make overview of Encapsulation, Inheritance, Polymorphism
 * [x]Develop code that uses the final keyword
 * [x]Create inner classes including static inner class, local class, nested class, and anonymous inner class
 * [x]Develop code that declares, implements and/or extends interfaces and use the @Override annotation.
+
 [x]Handling Exceptions
 * [x]Differentiate among checked exceptions, unchecked exceptions, and Errors
 * [x]Create a try-catch block and determine how exceptions alter normal program flow
@@ -64,72 +76,83 @@
 * [x]Create and invoke a method that throws an exception
 * [x]Recognize common exception classes (such as NullPointerException, ArithmeticException, ArrayIndexOutOfBoundsException, ClassCastException)
 * [x]Use catch, multi-catch, and finally clauses
-[]Generics and Collections
+
+[x]Use Java SE 8 Date/Time API ---> SKIPPED (self-education)
+* [x]Create and manage date-based and time-based events including a combination of date and time into a single object using LocalDate, LocalTime, LocalDateTime, Instant, Period, and Duration
+* [x]Work with dates and times across timezones and manage changes resulting from daylight savings including Format date and times values
+* [x]Define and create and manage date-based and time-based events using Instant, Period, Duration, and TemporalUnit
+
+[x]Generics and Collections
 * [x]Create and use a generic class
---> * []Create and use ArrayList, TreeSet, and ArrayDeque objects DISCUSS RANGE OPERATIONS
+* [x]Create and use ArrayList, TreeSet, and ArrayDeque objects DISCUSS RANGE OPERATIONS
 * [x]Create and use Maps (HashMap, LinkedHashMap, TreeMap)
 * [x]Override hashCode, equals, and toString methods from Object class
 * [x]Use java.util.Comparator and java.lang.Comparable interfaces
---> * []Use enumerated types including methods, and constructors in an enum type
----> [] Various types of inheritance usage
-[]Lambda Built-in Functional Interfaces
+
+[x]Lambda Built-in Functional Interfaces
 * [x]Create and use Lambda expressions
 * [x]Write a simple Lambda expression that consumes a Lambda Predicate expression
 * [x]Use  the built-in interfaces included in the java.util.function package such as Predicate, Consumer, Function, and Supplier
-* []Develop code that uses primitive versions of functional interfaces
-* []Develop code that uses binary versions of functional interfaces
-* []Develop code that uses the UnaryOperator interface
-* []Collections Streams and Filters
-* []Iterate using forEach methods of Streams and List
-* []Describe Stream interface and Stream pipeline
-* []Filter a collection by using lambda expressions
-* []Use method references with Streams
-[]Java Stream API
-* []Develop code to extract data from an object using peek() and map() methods including primitive versions of the map() method
-* []Search for data by using search methods of the Stream classes including findFirst, findAny, anyMatch, allMatch, noneMatch
-* []Develop code that uses the Optional class
-* []Develop code that uses Stream data methods and calculation methods
-* []Sort a collection using Stream API
-* []Save results to a collection using the collect method and group/partition data using the Collectors class
-* []Use flatMap() methods in the Stream API
-[]Use Java SE 8 Date/Time API skipped
-* ![]Create and manage date-based and time-based events including a combination of date and time into a single object using LocalDate, LocalTime, LocalDateTime, Instant, Period, and Duration
-* []Work with dates and times across timezones and manage changes resulting from daylight savings including Format date and times values
-* []Define and create and manage date-based and time-based events using Instant, Period, Duration, and TemporalUnit
+* [x]Develop code that uses primitive versions of functional interfaces
+* [x]Develop code that uses binary versions of functional interfaces
+* [x]Develop code that uses the UnaryOperator interface
+* [x]Collections Streams and Filters
+* [x]Iterate using forEach methods of Streams and List
+* [x]Describe Stream interface and Stream pipeline
+* [x]Filter a collection by using lambda expressions
+* [x]Use method references with Streams
+
+[x]Java Stream API
+* [x]Develop code to extract data from an object using peek() and map() methods including primitive versions of the map() method
+* [x]Search for data by using search methods of the Stream classes including findFirst, findAny, anyMatch, allMatch, noneMatch
+* [x]Develop code that uses the Optional class
+* [x]Develop code that uses Stream data methods and calculation methods
+* [x]Sort a collection using Stream API
+* [x]Save results to a collection using the collect method
+  [x]Group/partition data using the Collectors class
+* [x]Use flatMap() methods in the Stream API
+
 []Java I/O Fundamentals
 * []Read and write data from the console
 * []Use BufferedReader, BufferedWriter, File, FileReader, FileWriter, FileInputStream, FileOutputStream, ObjectOutputStream, ObjectInputStream, and PrintWriter in the java.io package.
 * []Use Autoclose resources with a try-with-resources statement
 * []Create custom exceptions and Auto-closeable resources
 * []Test invariants by using assertions
+
 []Java File I/O (NIO.2)
 * []Use Path interface to operate on file and directory paths
 * []Use Files class to check, read, delete, copy, move, manage metadata of a file or directory
 * []Use Stream API with NIO.2
+
 []Java Concurrency
 * []Create worker threads using Runnable, Callable and use an ExecutorService to concurrently execute tasks
 * []Identify potential threading problems among deadlock, starvation, livelock, and race conditions
 * []Use synchronized keyword and java.util.concurrent.atomic package to control the order of thread execution
 * []Use java.util.concurrent collections and classes including CyclicBarrier and CopyOnWriteArrayList
-* 2[]Use parallel Fork/Join Framework
+* []Use parallel Fork/Join Framework
 * []Use parallel Streams including reduction, decomposition, merging processes, pipelines and performance.
+
 []Building Database Applications with JDBC
 * []Describe the interfaces that make up the core of the JDBC API including the Driver, Connection, Statement, and ResultSet interfaces and their relationship to provider implementations
 * []Identify the components required to connect to a database using the DriverManager class including the JDBC URL
 * []Submit queries and read results from the database including creating statements, returning result sets, iterating through the results, and properly closing result sets, statements, and connections
-[]Localization
-* []Read and set the locale by using the Locale object
-* []Create and read a Properties file
-* []Build a resource bundle for each locale and load a resource bundle in an application
+* []Object-Relation Mapping (ORMs) overview
+
+[x]Localization  -->  SKIPPED, SELF-EDUCATION
+* [x]Read and set the locale by using the Locale object
+* [x]Create and read a Properties file
+* [x]Build a resource bundle for each locale and load a resource bundle in an application
+
 []Other concepts
-* []equals, hashcode
+* [x]equals, hashcode
 * []Enums
 * []Reflection
 * []Annotations
-* []JDBC
 * []Recursion
-* []I/O Fundamentals
-* []NIO.2 (Files)
 * []Networking
 * []Regular expressions fundamentals
 * []XML review
+* []JSON processing
+* [] Spring workshop
+* [] Vert.x workshop
+* [] ORM creation workshop (JDBC, Reflection, Annotations)

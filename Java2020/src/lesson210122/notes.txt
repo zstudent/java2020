@@ -1,0 +1,14 @@
+Timothy Budd
+
+
+Inheritance types
+
+Specialization   Liskov OK
+Specification    Liskov OK
+Construction     Liskov failed
+Generalization   Liskov OK
+Extension        Liskov OK
+Restriction      Liskov failed
+Variation        Liskov  it depends on implementation
+Combination      multiple inheritance Liskov: generally OK, but in some cases failed
+
