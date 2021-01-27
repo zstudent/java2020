@@ -21,8 +21,8 @@ class Card {
 	
 	// data fields
 	private boolean faceup;
-	private int rank;
-	private int suit;
+	final private int rank;
+	final private int suit;
 
 	Card link;
 
@@ -34,10 +34,7 @@ class Card {
 	}
 
 	public int color() {
-		if (getSuit() == heart || getSuit() == diamond) {
-			return red;
-		}
-		return black;
+		return getSuit() == heart || getSuit() == diamond ? red : black;
 	}
 
 	public void draw(final Graphics g, final int x, final int y) {

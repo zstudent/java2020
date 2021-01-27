@@ -6,6 +6,7 @@ class SuitPile extends CardPile {
 		super(x, y);
 	}
 
+	@Override
 	public boolean canTake(final Card aCard) {
 		if (empty()) {
 			return aCard.isAce();

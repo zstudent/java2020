@@ -15,6 +15,7 @@ class TablePile extends CardPile {
 		top().flip();
 	}
 
+	@Override
 	public boolean canTake(final Card aCard) {
 		if (empty()) {
 			return aCard.isKing();
@@ -24,15 +25,18 @@ class TablePile extends CardPile {
 				&& (aCard.getRank() == topCard.getRank() - 1);
 	}
 
+	@Override
 	public void display(final Graphics g) {
 		stackDisplay(g, top());
 	}
 
+	@Override
 	public boolean includes(final int tx, final int ty) {
 		// don't test bottom of card
 		return x <= tx && tx <= x + Card.width && y <= ty;
 	}
 
+	@Override
 	public void select(final int tx, final int ty) {
 		if (empty()) {
 			return;

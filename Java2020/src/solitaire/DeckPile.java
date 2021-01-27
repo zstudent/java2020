@@ -16,9 +16,11 @@ class DeckPile extends CardPile {
 				count++;
 			}
 		}
+		// count is 52 now
 		// then pull them out randomly
-		for (; count > 0; count--) {
+		while (count > 0) {
 			int limit = ((int) (Math.random() * 1000)) % count;
+			// limit now is between 0 and count
 			// move down to a random location
 			for (int i = 0; i < limit; i++) {
 				pileTwo.addCard(pileOne.pop());
@@ -29,9 +31,11 @@ class DeckPile extends CardPile {
 			while (!pileTwo.empty()) {
 				pileOne.addCard(pileTwo.pop());
 			}
+			count--;
 		}
 	}
 
+	@Override
 	public void select(final int tx, final int ty) {
 		if (empty()) {
 			return;
