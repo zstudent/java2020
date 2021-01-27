@@ -53,7 +53,7 @@
 * [x]Determine when casting is necessary
 * [x]Use super and this to access objects and constructors
 * [x]Develop code that uses abstract classes and methods
----> * [] Various types of inheritance usage
+* [x]Various types of inheritance usage
 
 [x]Polymorphism
 * [x]Describe Interfaces
@@ -136,8 +136,9 @@
 * []Describe the interfaces that make up the core of the JDBC API including the Driver, Connection, Statement, and ResultSet interfaces and their relationship to provider implementations
 * []Identify the components required to connect to a database using the DriverManager class including the JDBC URL
 * []Submit queries and read results from the database including creating statements, returning result sets, iterating through the results, and properly closing result sets, statements, and connections
+* []Object-Relation Mapping (ORMs) overview
 
-[x]Localization  SELF-EDUCATION
+[x]Localization  -->  SKIPPED, SELF-EDUCATION
 * [x]Read and set the locale by using the Locale object
 * [x]Create and read a Properties file
 * [x]Build a resource bundle for each locale and load a resource bundle in an application
@@ -151,5 +152,7 @@
 * []Networking
 * []Regular expressions fundamentals
 * []XML review
+* []JSON processing
 * [] Spring workshop
 * [] Vert.x workshop
+* [] ORM creation workshop (JDBC, Reflection, Annotations)
