@@ -1,0 +1,13 @@
+
+[ 3456 ]   |  args*     args String[] = ["A", "B"] <- 3456
+[  10  ] x |  main
+[  __  ] z V
+[  L11 ]   |  return point
+[  10  ] x |  calc
+[  L16 ]   V  return point in calc
+[ 100K ]   |  millis from Time.pause
+[  L7  ]   |  return point in Time.pause
+[ 100K ]   V
+[      ]   |
+[      ]   |
+[      ]   V
