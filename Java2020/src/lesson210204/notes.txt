@@ -1,0 +1,4 @@
+synchronized:
+- to fix race condition: we can arrange critical section
+- to fix visibility problem: propagates changes to RAM
+- ?
