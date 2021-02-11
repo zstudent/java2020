@@ -145,6 +145,7 @@
 
 []Other concepts
 * [x]equals, hashcode
+* [ ] Generics !!!
 * []Enums
 * []Reflection
 * []Annotations
