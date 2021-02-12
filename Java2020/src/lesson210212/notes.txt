@@ -1,0 +1,17 @@
+
+         			synchronized        lock       semaphore
+critical section         +                +            +
+signaling            wait/notify      Condition        +
+interruptible            -                +            +
+tryLock, timeout         -                +            +
+supports fair            -                +            +
+
+
+
+
+
+           take  put count
+0 [ __ ]               0
+1 [ __ ]               
+2 [ __ ]    2     2
+3 [ __ ]    
