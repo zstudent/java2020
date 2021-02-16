@@ -5,7 +5,9 @@ signaling            wait/notify      Condition        +
 interruptible            -                +            +
 tryLock, timeout         -                +            +
 supports fair            -                +            +
-
+reentrant                + (blocks)       + (counts)   +
+unlock from \
+the same thread          +                + (except.)  -
 
 
 
