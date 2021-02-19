@@ -6,8 +6,8 @@ interruptible            -                +            +
 tryLock, timeout         -                +            +
 supports fair            -                +            +
 reentrant                + (blocks)       + (counts)   +
-unlock from \
-the same thread          +                + (except.)  -
+may be released 
+by another thread        -                - (except.)  +
 
 
 
