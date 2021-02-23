@@ -33,6 +33,7 @@ public class SemaphoreExamples3 {
 		System.out.println("three...");
 		sem.release();
 		System.out.println(sem.availablePermits());
+		
 	}
 
 }
