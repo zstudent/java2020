@@ -1,0 +1,15 @@
+Home Work
+
+Mandatory:
+
+- When DeckPile is selected, then if it is empty,  
+  place all cards from DiscardPile back to it
+  
+- Detect click on TablePile exactly (check bottom line)
+
+- Move several cards at once from a TablePile to another TablePile
+  
+Optional:
+
+- use drag-and-drop to put cards from DiscardPile to other piles
+- use drag-and-drop to put cards from all piles (except Deck) to other piles

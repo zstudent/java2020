@@ -1,0 +1,20 @@
+ Query 1: Find all transactions from year 2011 and sort them by value (small to high).
+ Query 2: What are all the unique cities where the traders work?
+ Query 3: Find all traders from Cambridge and sort them by name.
+ Query 4: Return a string of all traders' names sorted alphabetically.
+ Query 5: Are there any trader based in Milan?
+ Query 6: Print all transactions' values from the traders living in Cambridge.
+ Query 7: What's the highest value in all the transactions?
+ Query 8: Find the transaction with the smallest value
+ 
+
+ "Hello" "World"
+ Stream { "Hello" "World" }
+ Stream { ["H", "e", "l", "l", "o"]  ["W", "o", "r" , "l", "d" ] }
+ Stream { Stream {"H", "e", "l", "l", "o"}  Stream {"W", "o", "r" , "l", "d" } }
+ ---< flatMap >--
+ Stream { "H", "e", "l", "l", "o" "W", "o", "r" , "l", "d" }
+ 
+ 
+ 
+ 

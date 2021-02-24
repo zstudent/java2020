@@ -1,0 +1,12 @@
+
+() -> String            Supplier<String>
+(String) -> Boolean       Your own interface
+(Integer, Integer) -> Integer    BinaryOperator<Integer>
+
+Predicate<List> ex1 = (List x) -> "".equals(x.get(0));
+Consumer<Long> ex2 = (Long l) -> System.out.println(l);
+BiPredicate<String, String> ex3 = (s1, s2) -> false;
+
+Function<List<String>> ex4 = x -> x.get(0);  - compilation error
+UnaryOperator<Long> ex2 = (Long l) -> 3.14;   - compilation error
+Predicate ex4 = String::isEmpty;
