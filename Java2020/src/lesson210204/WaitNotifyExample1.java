@@ -18,6 +18,7 @@ public class WaitNotifyExample1 {
 				try {
 					mutex.wait();
 					System.out.println(Thread.currentThread().getName() + " signal received!");
+//					Time.pause(3000);  BAD IDEA !
 				} catch (InterruptedException e) {
 					System.out.println("interrupted!");
 				}
@@ -37,11 +38,11 @@ public class WaitNotifyExample1 {
 		
 		Time.pause(3000);
 		
-		synchronized (mutex) {
-			mutex.notifyAll();
+		synchronized (mutex) {  // lock mutex
+			mutex.notify();
 			System.out.println("Notified...");
 			Time.pause(3000);
-		}
+		} // unlock mutex
 
 	}
 

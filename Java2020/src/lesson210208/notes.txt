@@ -1,0 +1,12 @@
+----------------> time ---------------->
+w.t      new Thread |  
+w.task     null     | task1                 task2 
+                    |
+                    |
+                    |
+Main     new WT     |                     ex(task2)
+                    |
+T-0                 |       |--->--->--->--->--->--->--->--->
+local cache w.task                task1                  task1
+                              task !=null,             task != null??
+                              task.run()
