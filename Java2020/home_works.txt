@@ -45,3 +45,6 @@ implement method
 	
 2021-02-23
 	Implement CountDownLatch with Semaphore	
+	
+2021-03-01
+	Compare performance of various data structures in ParallelStrreamsExamples3	

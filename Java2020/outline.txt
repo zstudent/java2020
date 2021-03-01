@@ -147,6 +147,7 @@
 * [x]equals, hashcode
 * [ ] Generics !!!
 * []Enums
+* []CAS
 * []Reflection
 * []Annotations
 * []Recursion
