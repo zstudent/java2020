@@ -124,13 +124,13 @@
 * []Use Files class to check, read, delete, copy, move, manage metadata of a file or directory
 * []Use Stream API with NIO.2
 
-[]Java Concurrency
+[x]Java Concurrency
 * [x]Create worker threads using Runnable, Callable and use an ExecutorService to concurrently execute tasks
 * [x]Identify potential threading problems among deadlock, starvation, livelock, and race conditions, and visibility
 * [x]Use synchronized keyword and java.util.concurrent.atomic package to control the order of thread execution
 * [x]Use java.util.concurrent collections and classes including CyclicBarrier and CopyOnWriteArrayList
-* []Use parallel Fork/Join Framework
-* []Use parallel Streams including reduction, decomposition, merging processes, pipelines and performance.
+* [x]Use parallel Fork/Join Framework
+* [x]Use parallel Streams including reduction, decomposition, merging processes, pipelines and performance.
 
 []Building Database Applications with JDBC
 * []Describe the interfaces that make up the core of the JDBC API including the Driver, Connection, Statement, and ResultSet interfaces and their relationship to provider implementations

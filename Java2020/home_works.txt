@@ -47,4 +47,7 @@ implement method
 	Implement CountDownLatch with Semaphore	
 	
 2021-03-01
-	Compare performance of various data structures in ParallelStrreamsExamples3	
+	Compare performance of various data structures in ParallelStrreamsExamples3
+	
+2021-03-02
+    Implement merge sort using ForJoin pool		
