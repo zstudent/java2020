@@ -117,7 +117,6 @@
 * []Use BufferedReader, BufferedWriter, File, FileReader, FileWriter, FileInputStream, FileOutputStream, ObjectOutputStream, ObjectInputStream, and PrintWriter in the java.io package.
 * []Use Autoclose resources with a try-with-resources statement
 * []Create custom exceptions and Auto-closeable resources
-* []Test invariants by using assertions
 
 []Java File I/O (NIO.2)
 * []Use Path interface to operate on file and directory paths
@@ -145,6 +144,7 @@
 
 []Other concepts
 * [x]equals, hashcode
+* []Test invariants by using assertions
 * [ ] Generics !!!
 * []Enums
 * []CAS
