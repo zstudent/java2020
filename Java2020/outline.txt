@@ -148,8 +148,9 @@
 * [] Generics !!!
 * []Enums
 * []CAS
-* []Reflection
-* []Annotations
+* [x]Reflection
+* [x]Annotations
+* [] Double Dispatch example
 * []Recursion
 * []Networking
 * []Regular expressions fundamentals
