@@ -150,7 +150,7 @@
 * []CAS
 * [x]Reflection
 * [x]Annotations
-* [] Double Dispatch example
+* [x] Double Dispatch example
 * []Recursion
 * []Networking
 * []Regular expressions fundamentals
