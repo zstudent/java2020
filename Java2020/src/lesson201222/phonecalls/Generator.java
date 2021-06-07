@@ -1,12 +1,15 @@
 package lesson201222.phonecalls;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 public class Generator {
 	
-	static final int NUMBER_OF_PERSONS = 10_000_000;
+	static final int NUMBER_OF_PERSONS = 1_000;
 
 	static final Random rnd = new Random();
 	
@@ -29,6 +32,41 @@ public class Generator {
 		}
 		
 		return new Person(name.toString(), age, number.toString());
+	}
+
+
+	static List<Person> randomPersons() {
+		List<Person> randomPersons = new ArrayList<>(NUMBER_OF_PERSONS);
+		
+		for (int i = 0; i < NUMBER_OF_PERSONS; i++) {
+			randomPersons.add(person());
+		}
+		return randomPersons;
+		
+	}
+	
+	
+	static Map<Person, List<CallLogRecord>> randomPersonsCall(List<Person> randomPersons) {
+		
+		Map<Person, List<CallLogRecord>> logsByRandomPersons = new HashMap<>();
+		
+		for (int i = 0; i < randomPersons.size(); i++) {
+			int callerIndex = rnd.nextInt(NUMBER_OF_PERSONS);
+			int recieverIndex = rnd.nextInt(NUMBER_OF_PERSONS);
+			//to avoid calling to itself
+			while (callerIndex == recieverIndex) {
+				recieverIndex = rnd.nextInt(NUMBER_OF_PERSONS);
+			}
+			Person caller = randomPersons.get(callerIndex);
+			Person reciever = randomPersons.get(recieverIndex);
+			CallLogRecord callLogCaller = new CallLogRecord(LocalDateTime.now(), reciever.mobile, "outgoing");
+			CallLogRecord callLogReciever = new CallLogRecord(LocalDateTime.now(), caller.mobile, "incoming");	
+			
+			logsByRandomPersons.computeIfAbsent(caller, k -> new ArrayList<CallLogRecord>()).add(callLogCaller);
+			logsByRandomPersons.computeIfAbsent(reciever, k -> new ArrayList<CallLogRecord>()).add(callLogReciever);
+		}
+		
+		return logsByRandomPersons;
 	}
 	
 	public static void main(String[] args) {
